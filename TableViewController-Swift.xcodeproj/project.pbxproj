@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FCC4BC55196F63F800B5ED3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BC54196F63F800B5ED3A /* AppDelegate.swift */; };
-		FCC4BC57196F63F800B5ED3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BC56196F63F800B5ED3A /* ViewController.swift */; };
-		FCC4BC5A196F63F800B5ED3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC4BC58196F63F800B5ED3A /* Main.storyboard */; };
+		FCC4BC57196F63F800B5ED3A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BC56196F63F800B5ED3A /* TableViewController.swift */; };
 		FCC4BC5C196F63F800B5ED3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC4BC5B196F63F800B5ED3A /* Images.xcassets */; };
 		FCC4BC68196F63F800B5ED3A /* TableViewController_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BC67196F63F800B5ED3A /* TableViewController_SwiftTests.swift */; };
+		FCC4BC72196F653E00B5ED3A /* TableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BC71196F653E00B5ED3A /* TableViewData.swift */; };
+		FCC4BC74196F677900B5ED3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4BC73196F677900B5ED3A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +29,13 @@
 		FCC4BC4F196F63F800B5ED3A /* TableViewController-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewController-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC4BC53196F63F800B5ED3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC4BC54196F63F800B5ED3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCC4BC56196F63F800B5ED3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCC4BC59196F63F800B5ED3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCC4BC56196F63F800B5ED3A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FCC4BC5B196F63F800B5ED3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FCC4BC61196F63F800B5ED3A /* TableViewController-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableViewController-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC4BC66196F63F800B5ED3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC4BC67196F63F800B5ED3A /* TableViewController_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController_SwiftTests.swift; sourceTree = "<group>"; };
+		FCC4BC71196F653E00B5ED3A /* TableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewData.swift; sourceTree = "<group>"; };
+		FCC4BC73196F677900B5ED3A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				FCC4BC54196F63F800B5ED3A /* AppDelegate.swift */,
-				FCC4BC56196F63F800B5ED3A /* ViewController.swift */,
-				FCC4BC58196F63F800B5ED3A /* Main.storyboard */,
+				FCC4BC71196F653E00B5ED3A /* TableViewData.swift */,
+				FCC4BC56196F63F800B5ED3A /* TableViewController.swift */,
+				FCC4BC73196F677900B5ED3A /* DetailViewController.swift */,
 				FCC4BC5B196F63F800B5ED3A /* Images.xcassets */,
 				FCC4BC52196F63F800B5ED3A /* Supporting Files */,
 			);
@@ -189,7 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC4BC5A196F63F800B5ED3A /* Main.storyboard in Resources */,
 				FCC4BC5C196F63F800B5ED3A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC4BC57196F63F800B5ED3A /* ViewController.swift in Sources */,
+				FCC4BC72196F653E00B5ED3A /* TableViewData.swift in Sources */,
+				FCC4BC57196F63F800B5ED3A /* TableViewController.swift in Sources */,
 				FCC4BC55196F63F800B5ED3A /* AppDelegate.swift in Sources */,
+				FCC4BC74196F677900B5ED3A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,17 +234,6 @@
 			targetProxy = FCC4BC62196F63F800B5ED3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FCC4BC58196F63F800B5ED3A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCC4BC59196F63F800B5ED3A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FCC4BC69196F63F900B5ED3A /* Debug */ = {
